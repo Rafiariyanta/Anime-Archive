@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { FaBars } from 'react-icons/fa';
 import {MdOutlineCancel} from 'react-icons/md';
 
@@ -9,9 +10,10 @@ const Navbar = () => {
         <div className='w-screen h-[80px] z-10 bg-black fixed drop-shadow-lg'>
             <div className='px-2 flex justify-between items-center w-full h-full'>
                 <div className='flex items-center'>
-                    <h1 className='text-white text-3xl font-bold mr-4 sm:text-4xl'>ANIME ARCHIVE</h1>
+                    {/* <h1 className='text-white text-3xl font-bold mr-4 sm:text-4xl'>ANIME ARCHIVE</h1> */}
+                    <Link to="/" className='text-white text-3xl font-bold mr-4 sm:text-4xl'>ANIME ARCHIVE</Link>
                     <ul className='hidden text-white md:flex'>
-                        <li>BROWSE</li>
+                        <li><Link to="/browse">BROWSER</Link></li>
                         <li>ABOUT</li>
                         <li>CONTACT</li>
                     </ul>

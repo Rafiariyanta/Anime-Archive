@@ -8,7 +8,7 @@ const Home = () => {
                     <p className="text-xl">EXPLORE ANIME WORLD WITH US.</p>
                     <h2 className="text-4xl font-bold">ANIME WORLD ARCHIVE</h2>
                     <p>Dive into anime world.</p>
-                    <button className="py-2 px-5 sm:w-[50%]">BROWSE</button>
+                    <button className="py-2 px-5 w-[50%]">BROWSE</button>
                 </div>
                 <div>
                     <img src={bgImg} alt="" />
