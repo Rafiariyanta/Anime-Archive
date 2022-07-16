@@ -13,9 +13,9 @@ const Navbar = () => {
                     {/* <h1 className='text-white text-3xl font-bold mr-4 sm:text-4xl'>ANIME ARCHIVE</h1> */}
                     <Link to="/" className='text-white text-3xl font-bold mr-4 sm:text-4xl'>ANIME ARCHIVE</Link>
                     <ul className='hidden text-white md:flex'>
-                        <li><Link to="/browse">BROWSER</Link></li>
-                        <li>ABOUT</li>
-                        <li>CONTACT</li>
+                        <li><Link to="/browse">BROWSE</Link></li>
+                        <li><Link to="/about">ABOUT</Link></li>
+                        <li><Link to="/contact">CONTACT</Link></li>
                     </ul>
                 </div>
                 <div className='hidden md:flex pr-4'>
@@ -26,9 +26,9 @@ const Navbar = () => {
                 </div>
             </div>
             <ul className={!show ? 'hidden' : 'absolute text-white bg-black w-full px-8'}>
-                <li className='border-b-2 border-zinc-300 w-full'>HOME</li>
-                <li className='border-b-2 border-zinc-300 w-full'>ABOUT</li>
-                <li className='border-b-2 border-zinc-300 w-full'>CONTACT</li>
+                <li className='border-b-2 border-zinc-300 w-full'><Link to="/browse">BROWSE</Link></li>
+                <li className='border-b-2 border-zinc-300 w-full'><Link to="/about">ABOUT</Link></li>
+                <li className='border-b-2 border-zinc-300 w-full'><Link to="/contact">CONTACT</Link></li>
                 <div className='flex flex-col my-4'>
                     <button className='px-8 py-4'> SIGN IN </button>
                 </div>
