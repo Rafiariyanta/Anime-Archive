@@ -1,4 +1,4 @@
-import bgImg from '../assets/animeChars.png'
+import bgImg from '../assets/animeChars.webp'
 
 const Home = () => {
     return ( 

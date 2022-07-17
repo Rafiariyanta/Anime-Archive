@@ -26,7 +26,6 @@ const Navbar = () => {
                         <li><Link to="/browse">BROWSE</Link></li>
                         <li><Link to="/collection">COLLECTION</Link></li>
                         <li><Link to="/about">ABOUT</Link></li>
-                        <li><Link to="/contact">CONTACT</Link></li>
                     </ul>
                 </div>
                 <div className='hidden md:flex pr-4'>
@@ -45,7 +44,6 @@ const Navbar = () => {
                 <li className='border-b-2 border-zinc-300 w-full'><Link to="/browse">BROWSE</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full'><Link to="/collection">COLLECTION</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full'><Link to="/about">ABOUT</Link></li>
-                <li className='border-b-2 border-zinc-300 w-full'><Link to="/contact">CONTACT</Link></li>
                 <div className='flex flex-col my-4'>
                 {/* <Link to="/login"><button className='px-8 py-4'> SIGN IN </button></Link> */}
                 {!auth.user ?

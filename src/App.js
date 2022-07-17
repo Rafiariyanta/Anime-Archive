@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Browse from "./pages/Browse";
 import AnimeDetail from "./pages/animeDetail";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import CollectionContextProvider from './hooks/context/CollectionContext';
 import Collection from "./pages/Collection";
 import Login from './pages/Login';
@@ -23,7 +22,6 @@ function App() {
               <Route path='/' exact element={<Home />} />
               <Route path='/browse' exact element={<Browse />} />
               <Route path='/about' exact element={<About />} />
-              <Route path='/contact' exact element={<Contact />} />
               <Route path='/login' exact element={<Login />} />
               <Route path='/collection' exact element={
                 <RequireAuth>
