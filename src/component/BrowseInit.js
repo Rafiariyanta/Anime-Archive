@@ -1,7 +1,6 @@
 import AnimeCard from "../component/AnimeCard";
 
 const BrowseInit = ({data}) => {
-    console.log(data);
     return (
         <div>
             <div className="font-semibold text-lg ml-4 xl:ml-0"><h2>Trending Now</h2></div>

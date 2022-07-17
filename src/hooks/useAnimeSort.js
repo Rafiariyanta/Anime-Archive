@@ -1,4 +1,4 @@
-import { useQuery, gql } from '@apollo/client';
+import { useLazyQuery, gql } from '@apollo/client';
 
 const GET_ANIME_LIST = gql`
 query ($id: Int,$page: Int, $perPage: Int, $search: String)  { 
@@ -65,15 +65,17 @@ query ($id: Int,$page: Int, $perPage: Int, $search: String)  {
     }
 `
 
-export const useAnimeSort = () => {
-    const { error, data, loading } = useQuery(GET_ANIME_LIST, {
+export const useAnimeSort = (searchInput) => {
+    const [getAnimeSort, { error, data, loading }] = useLazyQuery(GET_ANIME_LIST, {
         variables: {
             page: 1,
-            perPage: 6
+            perPage: searchInput === "" ? 6 : null,
+            search: searchInput === "" ? null : searchInput
         }
     });
 
     return {
+        getAnimeSort,
         error,
         data,
         loading
