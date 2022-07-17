@@ -21,7 +21,7 @@ There are few steps in terminal you must type to try this web application:
 
 ```
 git clone https://github.com/Rafiariyanta/Anime-Archive.git
-cd sample-app
+cd anime-archive
 npm install
 npm start
 ```
